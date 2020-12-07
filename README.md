@@ -9,7 +9,7 @@ When you've completed this project, you'll have an application that can be train
 
 This is the final Project of the Udacity AI with Python Nanodegree
 
-Prerequisites
+#Prerequisites
 The Code is written in Python 3.6.5 . If you don't have Python installed you can find it here. If you are using a lower version of Python you can upgrade using the pip package, ensuring you have the latest version of pip.
 
 To install pip run in the command Line
