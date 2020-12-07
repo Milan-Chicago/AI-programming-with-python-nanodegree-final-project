@@ -75,7 +75,7 @@ Cloud Services -- There are many paid cloud services that let you train your mod
 Coogle Colab -- Google Colab gives you free access to a tesla K80 GPU for 12 hours at a time. Once 12 hours have ellapsed you can just reload and continue! The only limitation is that you have to upload the data to Google Drive and if the dataset is massive you may run out of space.
 However, once a model is trained then a normal CPU can be used for the predict.py file and you will have an answer within some seconds.
 
-Hyperparameters
+# Hyperparameters
 As you can see you have a wide selection of hyperparameters available and you can get even more by making small modifications to the code. Thus it may seem overly complicated to choose the right ones especially if the training needs at least 15 minutes to be completed. So here are some hints:
 
 By increasing the number of epochs the accuracy of the network on the training set gets better and better however be careful because if you pick a large number of epochs the network won't generalize well, that is to say it will have high accuracy on the training image and low accuracy on the test images. Eg: training for 12 epochs training accuracy: 85% Test accuracy: 82%. Training for 30 epochs training accuracy 95% test accuracy 50%.
@@ -84,5 +84,5 @@ A small learning rate guarantees that the network will reach greater accuracies 
 Densenet121 works best for images but the training process takes significantly longer than alexnet or vgg16
 *My settings were lr=0.001, dropoup=0.5, epochs= 15 and my test accuracy was 86% with densenet121 as my feature extraction model.
 
-Pre-Trained Network
+# Pre-Trained Network
 The checkpoint.pth file contains the information of a network trained to recognise 102 different species of flowers. I has been trained with specific hyperparameters thus if you don't set them right the network will fail. In order to have a prediction for an image located in the path /path/to/image using my pretrained model you can simply type python predict.py /path/to/image checkpoint.pth
